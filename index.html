@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1>Number guessing game:1-100</h1>
+    <form action="">
+    <h2>In How many rounds you think can guess the number</h2>
+    <h3 id="versuchercounter"></h3>
+
+        <article id="form-box">
+           
+                <input type="radio" name="number" id="4times"  checked>
+              
+                <label for="">4</label>
+ 
+          
+                <input type="radio" name="number" id="5times" >
+                <label for="">5</label>
+           <br>
+           <br>
+         
+         
+                <input type="radio" name="number" id="6times" >
+                <label for="">6</label>
+
+        
+                <input type="radio" name="number" id="custom" onchange="getRound()">
+                <label for="">Custom</label>
+                <br>
+                <br>
+                <input type="number" name="" id="eingabecustom" >
+           
+              
+        </article>
+    </form >    
+        <form class=" form_2">
+            <input type="number" name="" id="UserInput">
+            <br>
+            <input type="button" value="guess" id="disableButton" onclick="guess()">
+        </form>
+
+        <div id="ausgabe"></div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
